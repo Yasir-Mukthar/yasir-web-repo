@@ -1,12 +1,14 @@
 function sendMail(params){
     var tempParams = {
-        from_name: document.getElementById("fromName").value,
-        email_sender: document.getElementById("emailSender").value,
-        subject_sender: document.getElementById("subjectSender").value,
-        message_sender: document.getElementById("message").value,
+        fromName: document.getElementById("fromName").value,
+        emailSender: document.getElementById("emailSender").value,
+        subjectSender: document.getElementById("subjectSender").value,
+        message: document.getElementById("message").value,
     };
-    emailjs.send('{{SERVICE ID}}','{{TEMPLATE ID}}',tempParams)
+    emailjs.send('service_67qfjhw','template_p7haycb',tempParams)
      .then(function(res){
+
+        
         Swal.fire({
             position: 'center',
             icon: 'success',
@@ -16,6 +18,7 @@ function sendMail(params){
           });
      });
 }
+
 
 var navbarvertical = document.getElementById("navt");
 
@@ -33,6 +36,15 @@ function toggle() {
 
 
 $(document).ready(function () {
+    // if(window.navigator.onLine){
+
+    // } else{
+    //     document.write(`
+        
+        
+    //     `);
+
+    // }
     
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active");
@@ -49,7 +61,7 @@ $(document).ready(function () {
         
     });
     var typed = new Typed(".typing-2",{
-        strings: ["YASIR MUKHTAR","Frontend Developer","Freelancer","Student"],
+        strings: ["Frontend Developer","Freelancer","Student"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true,
@@ -66,3 +78,12 @@ $(document).ready(function () {
         behavior: "smooth"
       });
     });
+
+
+    // Preloader 
+    const preloader = document.getElementById("preloader");
+    function loaderfunction(){
+        console.log("helooo");
+preloader.style.display="none";
+     }
+    window.addEventListener("load",loaderfunction());

@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
+    padding:0px;
+    margin:0px;
     box-sizing: border-box;
+
 }
 
 html {
@@ -11,6 +12,7 @@ html {
 }
 
 .favicon {
+    background-color: yellow;
     border-radius: 50%;
 }
 
@@ -107,6 +109,83 @@ html {
 }
 
 
+/* -----------------------------
+Preloader styling is here
+-------------------------------- */
+
+  #preloader {
+    background-color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+  }
+  #loader {
+      display: block;
+      position: relative;
+      left: 50%;
+      top: 50%;
+      width: 150px;
+      height: 150px;
+      margin: -75px 0 0 -75px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: black;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+  }
+  #loader:before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      right: 5px;
+      bottom: 5px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color:#ff7700;
+      -webkit-animation: spin 3s linear infinite;
+      animation: spin 3s linear infinite;
+  }
+  #loader:after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      right: 15px;
+      bottom: 15px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: yellow;
+      -webkit-animation: spin 1.5s linear infinite;
+      animation: spin 1.5s linear infinite;
+  }
+  @-webkit-keyframes spin {
+      0%   {
+          -webkit-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+      }
+      100% {
+          -webkit-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+      }
+  }
+  @keyframes spin {
+      0%   {
+          -webkit-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+      }
+      100% {
+          -webkit-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+      }
+  }
 
 
 /* -----------------------------
@@ -122,6 +201,7 @@ Home section styling is here
     font-family: 'Ubuntu', sans-serif;
     width: 100%;
     padding: 50px 50px 0px 50px;
+    
 }
 
 .hero-section {
@@ -148,7 +228,20 @@ Home section styling is here
 .profile-image img {
     width: 500px;
     height: 500px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+    background:-webkit-linear-gradient(0deg,
+    rgb(238, 242, 11) 0%,
+    rgb(238, 143, 84) 100%);
+    position: relative;
+    
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+
+
+
 }
+
+
+
 
 .home-content .text-1 {
     font-size: 20px;
@@ -171,6 +264,33 @@ Home section styling is here
     font-weight: 600;
 }
 
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(-6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(-2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(1.2deg);
+	}
+}
 
 
 
@@ -374,11 +494,11 @@ h3 {
 }
 
 .bio-progress-2::before {
-    width: 50%;
+    width: 60%;
 }
 
 .bio-progress-3::before {
-    width: 80%;
+    width: 50%;
 }
 
 .bio-progress-4::before {
@@ -412,19 +532,24 @@ Services section styling is here
 .services .serv-content .card {
     box-shadow: 0px 0px 20px 0px rgba(97, 101, 132, 0.2);
     width: calc(33% - 20px);
+    height: 350px;
     text-align: center;
     background: none;
     border-radius: 6px;
     padding: 20px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+    background-color: white;
 }
 
-.services .serv-content .card:hover {
-    background: none;
-}
 
 .services .serv-content .card .box {
+    height: 100%;
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
     transition: all 0.3s ease;
 }
 
@@ -433,19 +558,22 @@ Services section styling is here
 }
 
 .services .serv-content .card i {
-    font-size: 50px;
-    color: #23b410;
+    font-size: 70px;
+    color: #eb7506;
     transition: color 0.3s ease;
 }
 
 .services .serv-content .card:hover i {
-    color: #23b410;
+    color: #000;
 }
 
 .services .serv-content .card .text {
     font-size: 25px;
     font-weight: 500;
-    margin: 10px 0 7px 0;
+    margin: 25px 0 7px 0;
+}
+.serv-content .card p{
+    margin-top: 5px;
 }
 
 
@@ -459,6 +587,9 @@ Projects section styling is here
 #projects .max-width {
     width: 100%;
     padding: 0px;
+}
+.project-section{
+    background-color: white;
 }
 .project-section .title::after {
     background: black;
@@ -485,6 +616,7 @@ Projects section styling is here
 
 .portfolio-images img {
     width: 100%;
+
     border-radius: 7px;
     position: relative;
     overflow: hidden;
@@ -512,7 +644,7 @@ Projects section styling is here
 }
 
 .overlay .demo-btn {
-    background: #000;
+    background: black;
     font-size: 18px;
     padding: 10px;
     color: white;
@@ -528,6 +660,7 @@ Projects section styling is here
 
 .overlay a {
     font-size: 35px;
+    font-weight: 500;
     color: black;
 }
 
@@ -543,7 +676,7 @@ Contact Us section styling is here
 -------------------------------- */
 
 .contact {
-    background-color: white;
+    background-color: rgb(249 249 255);
 }
 
 .contact .title::after {
@@ -568,6 +701,10 @@ Contact Us section styling is here
 .contact .contact-content .left .paragraph-3 {
     font-size: 18px;
     color: #777777;
+}
+.left .paragraph-3 span{
+    color: #eb7506;
+    font-weight: 600;
 }
 
 .contact .contact-content .left .icons {
@@ -760,6 +897,7 @@ Scrollbar styling is here
 
 ::-webkit-scrollbar-thumb {
     background: rgb(246, 179, 33);
+    border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -942,6 +1080,13 @@ Responsive Designing is here
     .grid-three-col {
         grid-template-columns: repeat(2, 1fr);
     }
+    .contact .contact-content .row {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .email-wrap {
+        word-break: break-all;
+    }
 }
 
 @media (max-width: 690px) {
@@ -1081,8 +1226,8 @@ Responsive Designing is here
 
     .contact .contact-content .row {
         min-height: 65px;
-        margin-top: 10px;
-    }
+        margin-top: 20px;
+        margin-bottom: 10px;    }
 
     .contact .contact-content .row .info {
         margin-left: 10px;
