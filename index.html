@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="title" content="Yasir Mukhtar | Frontend Web Developer | Portfolio">
+  <meta name="description" content="I'm Yasir-Mukthar frontend web developer working with HTML/CSS and JavaScript">
+  <meta name="keywords" content="Frontend web developer, HTML/CSS JS,SEO, Web Developer, YASIR MUKHTAR, Figma to HTML, PSD/XD to Website">
+  <meta name="author" content="Yasir Mukhtar">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yasir Mukhtar | Portfolio</title>
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- FAVICON -->
+  <link class="favicon" rel="icon" type="image/img" sizes="32x32" href="images/yasir-favicon.PNG">
+
+  <!-- Google material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/18cde80192.js" crossorigin="anonymous"></script>
+
+  <!-- TYPE JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+    integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- jQUERY -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- SWEET ALERT -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- EMAIL JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("e2FbflmSwNqyMF6op");
+    })();
+  </script>
+
+</head>
+
+<body>
+
+
+  <div id="preloader">
+    <div id="loader"></div>
+  </div>
+
+
+
+
+  <nav class="navbar">
+    <div class="max-width">
+      <div class="logo">
+        <a href="#">Yasir<span> Mukhtar</span></a>
+      </div>
+      <ul class="menu" id="navt">
+        <li><a href="#home" class="menu-btn">Home</a></li>
+        <li><a href="#about" class="menu-btn">About</a></li>
+        <li><a href="#services" class="menu-btn">Services</a></li>
+        <li><a href="#projects" class="menu-btn">Projects</a></li>
+        <li><a href="#contact" class="menu-btn">Contact</a></li>
+      </ul>
+
+      <div class="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <!-- Scroll to top button -->
+  <button id="btnScrollToTop">
+    <i class="fa-sharp fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- home section start-->
+  <section class="home" id="home">
+    <div class="hero-section">
+      <div class="home-content">
+        <div class="text-1" data-aos="fade-up">THIS IS ME</div>
+        <div class="text-2">YASIR MUKHTAR</div>
+        <div class="text-3">I'm a <span class="typing">Student</span></div>
+        <button class="btn"><a href="#contact">HIRE ME</a></button>
+      </div>
+      <div class="profile-image"> <img src="images/WebProfilePic.png" alt="home  image">
+      </div>
+    </div>
+  </section>
+
+  <!-- about section -->
+  <section class="about" id="about">
+    <div class="max-width">
+      <h2 class="title" data-aos="fade-down">About Me</h2>
+      <div class="about-content">
+        <div class="column left" data-aos="fade-right">
+          <img src="images/Profile-Image.jpg" alt="" />
+        </div>
+        <div class="column right" data-aos="fade-up">
+          <div class="text">
+            I'm a <span class="typing-2">Fronted Developer</span>
+          </div>
+          <p class="paragraph">
+            Hey, I'm Yasir Mukhtar, a frontend web developer with six months of experience working with HTML, CSS, and JavaScript, currently doing a BS in Computer Science.
+            
+          </p>
+          <div class="bio-data-stats">
+            <div class="bio-stats">
+              <h3>HTML</h3>
+              <div class="bio-progress-bar">
+              </div>
+            </div>
+            <div class="bio-stats">
+              <h3>CSS</h3>
+              <div class="bio-progress-bar bio-progress-2">
+              </div>
+            </div>
+            <div class="bio-stats">
+              <h3>JavaScript</h3>
+              <div class="bio-progress-bar bio-progress-3">
+              </div>
+            </div>
+            <div class="bio-stats">
+              <h3>C++</h3>
+              <div class="bio-progress-bar bio-progress-4">
+              </div>
+            </div>
+
+          </div>
+          <button class="btn"><a href="{{GOOGLE DRIVE LINK FOR RESUME}}">Download CV</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="max-width">
+      <h2 class="title" data-aos="fade-down">My Services</h2>
+      <div class="serv-content">
+        <div class="card" data-aos="flip-left">
+          <div class="box">
+            <i class="fa-solid fa-code"></i>            <div class="text">Fronted Web Developer</div>
+            <p>
+              As a front-end web developer, I will create a responsive, user-friendly, and SEO-optimized website for
+              your business.
+
+            </p>
+          </div>
+        </div>
+
+        <div class="card" data-aos="flip-left">
+          <div class="box">
+            <i class="fa-brands fa-figma"></i>
+            <div class="text">Figma & PSD to Web</div>
+            <p>
+              I will convert your Figma & PSD design into a pixel-perfect HTML/CSS Website that is compatible with all modern browsers.
+            </p>
+          </div>
+        </div>
+
+        <div class="card" data-aos="flip-left">
+          <div class="box">
+            <i class="fa-solid fa-bug-slash"></i>
+            <div class="text">Bug fixing</div>
+            <p>
+              I will fix any bug related to HTML, CSS, and JavaScript and issue related to Responsiveness, syntax, and
+              layout Design.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Projects Sections -->
+
+
+  <section class="services project-section" id="projects">
+    <div class="max-width">
+      <h2 class="title" data-aos="fade-down">My Projects</h2>
+      <div class="serv-content">
+
+
+        <div class="grid grid-three-col portfolio-images">
+
+
+          <div class="img-ovelay p-btn--3 " data-aos="zoom-in-right" data-aos-offset="100"
+            data-aos-easing="ease-in-sine">
+            <img src="images/temperature-converter.jpg" loading="lazy" alt="portfolio images " />
+            <div class="overlay">
+              <a href="#projects" class="common-heading">Temperature Converter</a>
+              <a href="https://yasir-mukthar.github.io/Temperature-Converter/" target="_blank" rel="noopener noreferrer" class=" demo-btn">Live Demo</a>
+            </div>
+          </div>
+          <div class="img-ovelay p-btn--3" data-aos="zoom-in-right" data-aos-offset="150"
+            data-aos-easing="ease-in-sine">
+            <img src="images/Crud-Operation-PHP.jpg" loading="lazy" alt="portfolio images " />
+            <div class="overlay">
+              <a href="#projects" class="common-heading">Crud Operation</a>
+              <a href="https://my-crud-operation.000webhostapp.com/crud.php" target="_blank" rel="noopener noreferrer" class=" demo-btn">Live Demo</a>
+            </div>
+          </div>
+
+          <div class="img-ovelay p-btn--1" data-aos="zoom-in-right" data-aos-offset="175"
+            data-aos-easing="ease-in-sine">
+            <img src="images/Quiz-app.jpg" loading="lazy" alt="portfolio images " />
+            <div class="overlay">
+              <a href="#projects" class="common-heading">Quiz App</a>
+              <a href="https://yasir-mukthar.github.io/Quiz-App/" target="_blank" rel="noopener noreferrer" class=" demo-btn">Live Demo</a>
+            </div>
+          </div>
+          <div class="img-ovelay p-btn--1 p-btn--2" data-aos="zoom-in-right" data-aos-offset="150"
+            data-aos-easing="ease-in-sine">
+            <img src="images/Youtube-Home-Page-Clone.jpg" loading="lazy" alt="portfolio images " />
+            <div class="overlay">
+              <a href="#projects" class="common-heading">Youtube Clone</a>
+              <a href="https://yasir-mukthar.github.io/Youtube-Home-Page-Clone/" target="_blank" rel="noopener noreferrer" class=" demo-btn">Live Demo</a>
+            </div>
+          </div>
+          <div class="img-ovelay p-btn--2" data-aos="zoom-in-right" data-aos-offset="150"
+            data-aos-easing="ease-in-sine">
+            <img src="images/Book-Library.jpg" loading="lazy" alt="portfolio images " />
+            <div class="overlay">
+              <a href="#projects" class="common-heading">Book Library</a>
+              <a href="https://yasir-mukthar.github.io/Booklibrary/" target="_blank" rel="noopener noreferrer" class=" demo-btn">Live Demo</a>
+            </div>
+          </div>
+          <div class="img-ovelay p-btn--1" data-aos="zoom-in-right" data-aos-offset="150"
+            data-aos-easing="ease-in-sine">
+            <img src="images/0_hair-salon-min.jpg" loading="lazy" alt="portfolio images " />
+            <div class="overlay">
+              <a href="#projects"  class="common-heading">Hair Salon Web</a>
+              <a href="https://yasir-mukthar.github.io/Hair-Salon-Web/" target="_blank" rel="noopener noreferrer" class=" demo-btn">Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="max-width">
+      <h2 class="title" data-aos="fade-down">Contact Me</h2>
+      <div class="contact-content">
+        <div class="column left" data-aos="flip-left">
+          <div class="text">Let's Get in Touch</div>
+          <p class="paragraph-3">Are you looking for a Frontend Web Developer to build a <span> Responsive and
+              User-Friendly</span> website from scratch or looking for someone to redesign & develop your existing
+            website, then you are in the right place!
+          </p>
+          <div class="icons">
+            <div class="row">
+              <i class="fas fa-user"></i>
+              <div class="info">
+                <div class="head">Name</div>
+                <div class="sub-title">Yasir Mukhtar</div>
+              </div>
+            </div>
+            <div class="row">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="info">
+                <div class="head">Address</div>
+                <div class="sub-title">Mandi-Bahauddin, Punjab, Pakistan</div>
+              </div>
+            </div>
+            <div class="row">
+              <i class="fas fa-envelope"></i>
+              <div class="info">
+                <div class="head">Email</div>
+                <div class="sub-title email-wrap">yasirfrontendwebdeveloper@gmail.com</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column right" data-aos="flip-right">
+          <div class="text">
+            Message Me
+          </div>
+          <form action="#Contact">
+            <div class="fields">
+              <div class="field name">
+                <input type="text" id="fromName" placeholder="Name" required autocomplete="off">
+              </div>
+              <div class="field email">
+                <input type="email" id="emailSender" placeholder="Email" required autocomplete="off">
+              </div>
+            </div>
+            <div class="field">
+              <input type="text" id="subjectSender" placeholder="Subject" required autocomplete="off">
+            </div>
+            <div class="field textarea">
+              <textarea cols="30" rows="10" id="message" placeholder="Message" required autocomplete="off"></textarea>
+            </div>
+            <div class="button">
+              <button onclick="sendMail()" type="submit" class="btn">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- footer section start -->
+  <footer>
+    <div class="text-center">
+      <span>
+        Created By <a href="#">YASIR MUKHTAR</a> | <span class="far fa-copyright"> </span>
+        <script>document.write(new Date().getFullYear())</script> All rights reserved.
+        <div class="icons">
+          <a href="https://www.linkedin.com/in/yasir-mukhtar-85b590228/" target="_blank"><i
+              class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Yasir-Mukthar" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.youtube.com/channel/UC-i2CGRw09x3Dt6T0Cc-mew" target="_blank"><i
+              class="fab fa-youtube"></i></a>
+        </div>
+      </span>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+  <script>
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function () { myFunction() };
+
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+  </script>
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init({ easing: 'ease-in', delay: 100, duration: 300, offset: 100 }); window.addEventListener('load', AOS.refresh);</script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+
+  <script>
+    gsap.from(".bio-progress-bar", {
+      scrollTrigger: ".bio-progress-bar",
+      left: 0,
+      ease: Power2.easeInOut,
+      duration: 3,
+      stagger: 0.1
+    });
+  </script>
+
+</body>
+
+</html>
